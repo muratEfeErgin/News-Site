@@ -125,10 +125,11 @@
   .mobile {
     display: none;
   }
-  /* .blog-main {
+  .blog-main {
     display: grid;
-    grid-template-columns: minmax(auto, var(--max-width)) 1fr;
-  } */
+    grid-template-columns: 5fr 1fr;
+    gap: 5rem;
+  }
   .blog-hero {
     background-image: url(img/blog.png);
     background-repeat: no-repeat;
