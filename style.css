@@ -1,0 +1,224 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&display=swap");
+:root {
+  --primary-color: #e76f51;
+  --secondary-color: #2a9d8f;
+  --light-color: #f8f9fa;
+  --dark-color: #6c757d;
+  --white: #fff;
+  --max-width: 1100px;
+  --gray: #eee;
+  --brown: #2c2c2c;
+  --max-width: 1100px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: var(--light-color);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+/*title*/
+.title-sport {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  width: 6rem;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.title-healt {
+  background-color: var(--primary-color);
+  color: var(--white);
+  width: 6rem;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.title-economy {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  width: 9rem;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+/*btn*/
+
+.btn {
+  width: 10rem;
+  height: 3rem;
+  color: var(--white);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+/*section padding*/
+.section-padding {
+  padding: 2rem 4rem;
+}
+/*navbar*/
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--light-color);
+}
+.nav__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.navbar-logo {
+  width: 6rem;
+}
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+}
+.navbar__social-media ul {
+  display: flex;
+  display: none;
+}
+.navbar__social-media i {
+  font-size: 2.5rem;
+}
+.navbar a {
+  color: var(--dark-color);
+  padding: 0.5rem;
+}
+.navbar a:hover {
+  background-color: var(--gray);
+  color: var(--dark-color) !important;
+}
+.navbar-home {
+  background-color: var(--primary-color);
+  color: var(--white) !important;
+  border-radius: 5px;
+}
+
+.navbar-hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(img/rowing.jpeg);
+  color: var(--light-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.header-hero__btn {
+  background-color: var(--primary-color);
+}
+
+/* main */
+.news {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 2rem;
+}
+.news-item {
+  background-color: var(--white);
+  width: 90%;
+  color: var();
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.news-item h2 {
+  color: var(--dark-color);
+  font-size: 1.8rem;
+}
+
+/* footer */
+.footer {
+  background-color: var(--dark-color);
+  padding: 3rem;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+.footer section {
+  border-bottom: 1px solid #000;
+  border-bottom-style: dashed;
+  padding: 0.5rem 0rem;
+}
+.footer-logo img {
+  width: 10rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.footer h3 {
+  padding-left: 1rem;
+}
+.footer input[type="email"] {
+  width: 90%;
+  padding: 0.5rem;
+}
+.footer button[type="submit"] {
+  background-color: var(--primary-color);
+  width: 90%;
+}
+.footer input[type="email"]:focus {
+  border: 2px solid var(--gray);
+  outline: none;
+}
+
+.footer__links li {
+  border-bottom: 1px solid #dccfc0;
+  border-bottom-style: dotted;
+  color: var(--white);
+}
+.footer__links a {
+  color: var(--white);
+}
+.footer__social-media ul {
+  display: flex;
+  padding-top: 1rem;
+}
+.footer__social-media i {
+  font-size: 3rem;
+}
+.footer__copy {
+  background-color: var(--brown);
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+}
