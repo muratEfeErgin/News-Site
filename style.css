@@ -178,6 +178,11 @@ img {
 .footer-logo img {
   width: 10rem;
 }
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -215,6 +220,9 @@ form {
 }
 .footer__social-media i {
   font-size: 3rem;
+}
+.footer__social-media {
+  border-bottom-style: none !important;
 }
 .footer__copy {
   background-color: var(--brown);
