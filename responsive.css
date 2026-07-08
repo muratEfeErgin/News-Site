@@ -1,7 +1,6 @@
 @media (min-width: 768px) {
   .navbar__social-media ul {
     display: flex;
-    justify-content: flex-en;
     gap: 2rem;
   }
   .nav {
@@ -21,7 +20,7 @@
 
   .main {
     display: grid;
-    grid-template-columns: 1fr minmax(auto, 1100px) 1fr;
+    grid-template-columns: 1fr minmax(auto, var(--max-width)) 1fr;
     padding: 4rem 0;
   }
   .main > * {
@@ -42,5 +41,76 @@
   }
   .footer section {
     border-bottom-style: none;
+  }
+
+  /* about us */
+  .header-about-content div {
+    display: flex;
+    gap: 1rem;
+  }
+  .about-main {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, var(--max-width)) 1fr;
+  }
+  .about-main > * {
+    grid-column: 2/3;
+  }
+  .about-story-content-text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .about-cards {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+  }
+  .p-desktop {
+    display: block;
+  }
+  .about-team {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 3rem;
+  }
+  .about-team-person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    height: 20rem;
+  }
+  .about-team-person img {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 30%;
+    height: 10vh;
+  }
+  .about-team-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-team-stat {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .about-team-stat span {
+    display: flex;
+    border-right: none !important;
+    gap: 1rem;
+    align-items: center;
+    padding-left: 2rem;
+  }
+  .about-team-stat p {
+    font-size: 1.4rem;
+  }
+
+  .about-feature {
+    font-size: 1.6rem;
   }
 }
