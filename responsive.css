@@ -26,6 +26,10 @@
   .main > * {
     grid-column: 2 / 3;
   }
+
+  .news {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .footer {
     display: grid;
     grid-template-columns: 1fr minmax(auto, var(--max-width)) 1fr;
