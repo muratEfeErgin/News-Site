@@ -203,7 +203,6 @@ img {
 .news-item {
   background-color: var(--white);
   width: 90%;
-  color: var();
   padding: 2rem;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -590,7 +589,6 @@ form {
   font-weight: bolder;
 }
 .blog-trending-item img {
-  height: 20vh;
   margin-top: 2rem;
   border-radius: 10px;
 }
@@ -613,4 +611,131 @@ summary {
 .blog-information input {
   width: 100%;
   margin-bottom: 1rem;
+}
+
+/* contact */
+
+.contact-header {
+  background-image: url(img/contact.png);
+  display: flex;
+  height: 50vh;
+  color: var(--white);
+  flex-direction: column;
+  justify-content: center;
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem;
+}
+
+.contact-main {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  margin-top: 2rem;
+}
+.contact-content {
+  border: 1px solid var(--primary-color);
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.form {
+  padding: 1.5rem;
+  align-items: Flex-start;
+  width: 90%;
+  margin: auto;
+}
+.form input,
+.form textarea {
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+.form textarea {
+  height: 10rem;
+}
+.form input:hover,
+.form textarea:hover {
+  transform: translateY(-0.7rem);
+}
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border: 1px solid var(--blue-color);
+}
+
+.btn-contact {
+  width: 100%;
+  background-color: #e76f51;
+  padding: 1rem;
+  height: 4rem;
+  transition: all 0.3s ease;
+}
+.btn-contact:hover {
+  transform: translateY(-0.5rem);
+}
+.contact-content div {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+.contact-information {
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+.information-card {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.4s ease;
+}
+.information-card:hover {
+  transform: translateY(-0.7rem);
+}
+
+.information-card i {
+  font-size: 4.5rem;
+  color: var(--soft-orange-color);
+  align-self: center;
+}
+.contact-social-media i {
+  font-size: 3.5rem;
+  color: #000;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+.contact-features {
+  margin: 2rem 0rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2rem;
+  border: 2px solid var(--border-color);
+  background-color: var(--light-color);
+  border-radius: 1rem;
+}
+.features-card {
+  display: flex;
+  margin: 1rem;
+  gap: 2rem;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: all 0.4s ease;
+}
+.features-card:hover {
+  transform: translateY(-0.5rem);
+}
+.features-card i {
+  font-size: 3.5rem;
+  align-self: center;
+  color: var(--soft-orange-color);
 }

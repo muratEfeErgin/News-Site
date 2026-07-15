@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News site</title>
+    <title>News site | Contact</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../responsive.css" />
   </head>
@@ -15,8 +15,8 @@
           <ul>
             <li><a href="index.html" class="navbar-home">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </section>
         <section class="navbar__social-media">
@@ -30,6 +30,134 @@
       </div>
     </nav>
 
+    <header class="contact-header">
+      <h1>Contact Us</h1>
+      <p>Reach our editorial team, send ,feedback our ask a question.</p>
+    </header>
+
+    <main class="contact-main">
+      <section class="contact-content">
+        <h2>Send Us a Message</h2>
+        <form action="" class="form">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Your full name" />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="you@example.com"
+          />
+          <label for="subject">Subject</label>
+          <input type="text" placeholder="What is this regarding?" />
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Write your message here..."
+          ></textarea>
+          <button type="submit" class="btn btn-contact">Send Message</button>
+          <div>
+            <i class="fa-solid fa-lock"></i>
+            <p>We respect your privacy. Your information is safe with us.</p>
+          </div>
+        </form>
+      </section>
+      <section class="contact-information">
+        <h2>Contact İnformation</h2>
+        <img class="desktop" src="../img/img-3.webp" alt="" />
+        <div class="information-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>
+            <h3>Office Address</h3>
+            <p>
+              News Media House,123 Press Avenue,Suit 400, New York, NY 10001,
+              USA
+            </p>
+          </span>
+        </div>
+        <div class="information-card">
+          <i class="fa-regular fa-envelope"></i>
+          <span>
+            <h3>Email</h3>
+            <p>hello@news.com</p>
+            <a href="#" class="link">Editorial Inquiries →</a>
+          </span>
+        </div>
+        <div class="information-card">
+          <i class="fa-solid fa-phone"></i>
+          <span>
+            <h3>Phone</h3>
+            <p>+1 (212) 555-0189</p>
+            <a href="#" class="link">Call us anytime →</a>
+          </span>
+        </div>
+        <div class="information-card">
+          <i class="fa-regular fa-clock"></i>
+          <span>
+            <h3>Working hours</h3>
+            <p>
+              Monday - Friday: 9:00 AM - 6:00 PM (EST) <br />Saturday & Sunday:
+              Closed
+            </p>
+          </span>
+        </div>
+        <div class="information-card">
+          <i class="fa-solid fa-share-nodes"></i>
+          <span class="contact-social-media">
+            <h3>Follow Us</h3>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-square-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </span>
+        </div>
+      </section>
+      <section class="contact-features">
+        <details open>
+          <summary>
+            <h2>How Can We Help?</h2>
+            <i class="fa-solid fa-chevron-down mobile"></i>
+          </summary>
+          <p>Find quick answers to common questions or reach the right team.</p>
+          <div class="features-group">
+            <div class="features-card">
+              <i class="fa-regular fa-comment-dots"></i>
+              <span>
+                <h3>Editorial Inquiries</h3>
+                <p>Pitch a story, ask questions or reach our newsroom.</p>
+                <a href="#" class="link">Learn more →</a>
+              </span>
+            </div>
+            <div class="features-card">
+              <i class="fa-regular fa-pen-to-square"></i>
+              <span>
+                <h3>Feedback</h3>
+                <p>We value your feedback and are here to listen.</p>
+                <a href="#" class="link">Share feedback → </a>
+              </span>
+            </div>
+            <div class="features-card">
+              <i class="fa-regular fa-user"></i>
+              <span>
+                <h3>Corrections</h3>
+                <p>Report an error or request a correction</p>
+                <a href="#" class="link">Submit request →</a>
+              </span>
+            </div>
+            <div class="features-card">
+              <i class="fa-solid fa-headset"></i>
+              <span>
+                <h3>Technical Support</h3>
+                <p>Need help with our website or newsletter?</p>
+                <a href="#" class="link">Get Support </a>
+              </span>
+            </div>
+          </div>
+        </details>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer-inner">
         <section class="footer-logo">
